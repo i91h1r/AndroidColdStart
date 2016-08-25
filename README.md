@@ -31,3 +31,12 @@ Android 冷启动，优化app启动速度(视觉上提高启动速度)
             android:name=".MainActivity"
             android:theme="@style/AppTheme">`
 * 最后在activity的` setContentView(R.layout.activity_main);` 之前设置`setTheme(R.style.AppTheme);` 即可。
+###优点：
+相比传统的Splash界面：
+
+* 没有另外的activity需要加载，这是利用系统特性来实现的一个启动界面
+* 不需要消耗额外的系统资源启动速度更快，首次启动不会出现白屏现象，体验更好
+
+----------
+
+######还可以使用一个.9的title作为windowBackground的背景，可以实现一个先加载背景，后加载页面数据的冷启动
