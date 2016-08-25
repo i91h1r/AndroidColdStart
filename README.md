@@ -12,7 +12,7 @@ Android 冷启动，优化app启动速度(视觉上提高启动速度)
 *	首先在style.xml 中定义一个新的主题<br>`    <style name="AppTheme.Launcher">
    <item name="android:windowBackground">@drawable/launch_screen</item>
    </style>`
-* launch_screen :<br><pre>
+* launch_screen.xml :<br><pre>
    `<?xml version="1.0" encoding="utf-8"?>
 	<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
 		 android:opacity="opaque">
@@ -23,3 +23,11 @@ Android 冷启动，优化app启动速度(视觉上提高启动速度)
             android:gravity="center"/>
     	</item>
 	</layer-list>`</pre>
+	android:opacity="opaque" :防止出现闪屏现象<br>
+    <br>`<bitmap
+        android:src="@drawable/googlelogo"
+        android:gravity="center"/>`：设置预览图
+* 将需要启动的activity的Theme设置为`<activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">`
+* 最后在activity的` setContentView(R.layout.activity_main);` 之前设置`setTheme(R.style.AppTheme);` 即可。
