@@ -8,3 +8,4 @@ Android 冷启动，优化app启动速度(视觉上提高启动速度)
 
 #####效果：<br>
 默认情况下：![image](https://github.com/hyr0318/AndroidColdStart/blob/master/image/no_coldstart.gif)
+优化情况下：![image](https://github.com/hyr0318/AndroidColdStart/blob/master/image/no_coldstart.gif)
