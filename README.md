@@ -13,15 +13,13 @@ Android 冷启动，优化app启动速度(视觉上提高启动速度)
    <item name="android:windowBackground">@drawable/launch_screen</item>
    </style>`
 * launch_screen :<br>
-
-
-    `<?xml version="1.0" encoding="utf-8"?>
+   `<?xml version="1.0" encoding="utf-8"?>
 	<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
-    android:opacity="opaque">
-    <item android:drawable="@android:color/white"/>
-    <item>
+		 android:opacity="opaque">
+    		<item android:drawable="@android:color/white"/> 
+	<item>
         <bitmap
             android:src="@drawable/googlelogo"
             android:gravity="center"/>
-    </item>
+    	</item>
 	</layer-list>`
